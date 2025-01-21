@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güvenli Çocukluk İttifakı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3">Güvenli Çocukluk İttifakı</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#about" class="nav-link text-white">Hakkımızda</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link text-white">Hizmetlerimiz</a></li>
+                    <li class="nav-item"><a href="#resources" class="nav-link text-white">Kaynaklar</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="bg-light text-center py-5">
+        <div class="container">
+            <h2 class="display-4">Çocukların Geleceğine Umut Olun</h2>
+            <p class="lead">
+                Güvenli Çocukluk İttifakı, çocuk istismarını önlemek ve çocukların haklarını savunmak için yanınızda.
+            </p>
+            <a href="#contact" class="btn btn-primary btn-lg">Bağış Yap</a>
+        </div>
+    </section>
+
+    <section id="about" class="section py-5">
+        <div class="container">
+            <h2>Hakkımızda</h2>
+            <p>
+                Misyonumuz, çocukların istismardan korunması ve mutlu bir geleceğe adım atmalarını sağlamaktır.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="section py-5 bg-light">
+        <div class="container">
+            <h2>Hizmetlerimiz</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Eğitim Programları</h3>
+                            <p class="card-text">
+                                Öğretmenler, ebeveynler ve profesyoneller için bilinçlendirme eğitimleri.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Psikolojik Destek</h3>
+                            <p class="card-text">
+                                Mağdurlara ve ailelerine profesyonel yardım sunuyoruz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Farkındalık Kampanyaları</h3>
+                            <p class="card-text">
+                                Toplumun her kesiminde bilinç yaratacak etkinlikler.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="section py-5">
+        <div class="container">
+            <h2>Kaynaklar</h2>
+            <ul>
+                <li><a href="#">Raporlar ve Yayınlar</a></li>
+                <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                <li><a href="#">Destek Hatları</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section py-5 bg-light">
+        <div class="container">
+            <h2>İletişim</h2>
+            <form action="/submit" method="post" class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Adınız:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Mesaj:</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Güvenli Çocukluk İttifakı. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
