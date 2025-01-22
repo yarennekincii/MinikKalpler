@@ -1,33 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Güvenli Çocukluk İttifakı</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="script.js"></script>
-</head>
+    <title>Navbar Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şeffaf Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Genel Navbar Stilleri */
+        .navbar-custom {
+            background-color: rgba(255, 255, 255, 0.7); /* Şeffaf beyaz arka plan */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+            backdrop-filter: blur(10px); /* Arka plan bulanıklaştırma */
+			width: 100%;
+            height: 100px; /* Başlangıç yüksekliği */
+            transition: all 0.3s ease; /* Geçiş efekti */
+			
+            position: fixed; /* Yapışkan konum */
+             /* Sayfanın üst kısmına sabitle */
+            
+        }
 
+      
+       
+
+        /* Scroll sonrası stil */
+       
+
+        /* Logo yazısı */
+        .navbar-logo {
+            font-size: 2.5rem; /* Logo başlangıç boyutu */
+            font-weight: bold;
+            color: #5a82ad; /* Mavi renk */
+        }
+
+       
+
+        /* Menü linkleri */
+        .nav-link {
+            font-size: 1rem;
+            color: #000; /* Siyah */
+        }
+
+        .nav-link:hover {
+            color: #007bff; /* Hover renk değişimi */
+        }
+
+        /* Bağış düğmesi */
+        .btn-donate {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+        }
+
+        .btn-donate:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
 <body>
-    <header class="bg-primary text-white py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="h3">Güvenli Çocukluk İttifakı</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a href="#about" class="nav-link text-white">Hakkımızda</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link text-white">Hizmetlerimiz</a></li>
-                    <li class="nav-item"><a href="#resources" class="nav-link text-white">Kaynaklar</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link text-white">İletişim</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top">
+            <div class="container">
+                <!-- Logo -->
+                <h1 class="navbar-logo">Minik Kalpler</h1>
+
+                <!-- Hamburger Menü -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menü -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Hizmetlerimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resources">Kaynaklar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">İletişim</a>
+                        </li>
+                    </ul>
+                    <!-- Bağış Butonu -->
+                    <a href="#donate" class="btn btn-donate">Bağış Yap</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <section id="hero" class="bg-light text-center py-5">
-        <div class="container">
+    
+
+    
+
+
+
+ 
+
+
+    
+	
+	
+	
+	
+	
+
+    <section id="hero" class="bg-light text-center py-5" >
+        <div class="container"style="padding-top: 150px;">
             <h2 class="display-4">Çocukların Geleceğine Umut Olun</h2>
             <p class="lead">
                 Güvenli Çocukluk İttifakı, çocuk istismarını önlemek ve çocukların haklarını savunmak için yanınızda.
@@ -122,6 +215,12 @@
             <p>&copy; 2025 Güvenli Çocukluk İttifakı. Tüm hakları saklıdır.</p>
         </div>
     </footer>
+
+		<!-- Bootstrap JavaScript bağlantıları -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	
+	
+	
 </body>
 
 </html>
