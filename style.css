@@ -1,0 +1,134 @@
+/* Navbar */
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-custom .nav-link {
+    color: #555;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.navbar-custom .nav-link i {
+    margin-right: 5px;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ff5722;
+}
+
+.btn-custom {
+    background-color: #ff5722;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #e64a19;
+}
+button.btn-outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button.btn-outline {
+    margin-right: 5px;
+    border-color: #ff5722; /* Turuncu renk */
+  color: #ff5722; /* Turuncu yazı rengi */
+  }
+  button.btn-outline:hover {
+    background-color: #ff5722; /* Hover durumunda turuncu arka plan */
+    color: white; /* Hover durumunda beyaz yazı rengi */
+  }
+  /* Carousel */
+.carousel-caption {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+
+/* WhatsApp Button */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+/* Tooltip */
+.whatsapp-tooltip {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  background-color: dimgray;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: none;
+  white-space: nowrap;
+}
+
+.whatsapp:hover + .whatsapp-tooltip {
+  display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    width: 100%;
+    padding: 20px 0;
+}
+
+footer .container-fluid {
+    padding: 0 15px;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+footer .footer-links a {
+    display: inline-flex;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+}
+
+footer .footer-links a i {
+    margin-right: 10px;
+}
+
+footer .footer-links a:hover {
+    color: #ff5722;
+}
