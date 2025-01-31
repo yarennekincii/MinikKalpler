@@ -2,9 +2,15 @@
 .navbar-custom {
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(5px);
+    height: 80px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
+
+.navbar-brand i {
+  color: #a61e25 !important; /* İkonun rengi */
+}
+
 
 .navbar-custom .nav-link {
     color: #555;
@@ -17,11 +23,11 @@
 }
 
 .navbar-custom .nav-link:hover {
-    color: #ff5722;
+    color: #a61e25;
 }
 
 .btn-custom {
-    background-color: #ff5722;
+    background-color:#a61e25;
     color: white;
     font-weight: bold;
     border-radius: 20px;
@@ -30,23 +36,10 @@
 }
 
 .btn-custom:hover {
-    background-color: #e64a19;
+    background-color: #a61e25;
 }
-button.btn-outline {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  button.btn-outline {
-    margin-right: 5px;
-    border-color: #ff5722; /* Turuncu renk */
-  color: #ff5722; /* Turuncu yazı rengi */
-  }
-  button.btn-outline:hover {
-    background-color: #ff5722; /* Hover durumunda turuncu arka plan */
-    color: white; /* Hover durumunda beyaz yazı rengi */
-  }
+
+
   /* Carousel */
 .carousel-caption {
     position: absolute;
@@ -130,5 +123,5 @@ footer .footer-links a i {
 }
 
 footer .footer-links a:hover {
-    color: #ff5722;
+    color: #a61e25;
 }
